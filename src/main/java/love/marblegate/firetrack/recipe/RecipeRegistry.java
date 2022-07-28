@@ -1,6 +1,7 @@
 package love.marblegate.firetrack.recipe;
 
 import love.marblegate.firetrack.FireTrack;
+import love.marblegate.firetrack.easteregg.EastEggBootsTrackMaterialRecipe;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;

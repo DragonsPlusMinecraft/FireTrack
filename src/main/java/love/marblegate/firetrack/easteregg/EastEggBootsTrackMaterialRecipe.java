@@ -1,8 +1,9 @@
-package love.marblegate.firetrack.recipe;
+package love.marblegate.firetrack.easteregg;
 
 import com.google.common.collect.Lists;
 import love.marblegate.firetrack.capability.TrackTypeData;
 import love.marblegate.firetrack.easteregg.ItemRegistry;
+import love.marblegate.firetrack.recipe.RecipeRegistry;
 import love.marblegate.firetrack.track.TrackType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
