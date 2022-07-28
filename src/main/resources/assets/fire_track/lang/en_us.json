@@ -1,5 +1,17 @@
 {
   "tooltip.fire_track.fire.name": "Flaming Track",
   "tooltip.fire_track.smoke.name": "Black Smoke Track",
-  "tooltip.fire_track.lava.name": "Lava Track"
+  "tooltip.fire_track.lava.name": "Lava Track",
+  "tooltip.fire_track.modern.name": "M O D E R N",
+  "tooltip.fire_track.good_news.name": "Good news!",
+  "tooltip.fire_track.waiting_for_server.name": "Waiting for server...",
+  "item.fire_track.lava_track_flame": "Lava Track Flame",
+  "item.fire_track.lava_track_flame.tooltip": "The mind can also be as hot as lava.\nThis looks like a great idea... Put it on your boots.",
+  "item.fire_track.lava_track_flame.clue": "Do something that makes other people's heads burn.",
+  "item.fire_track.fire_track_flame": "Flaming Track Flame",
+  "item.fire_track.fire_track_flame.tooltip": "It's as fascinating as a burning night.\nThis looks like a great idea... Put it on your boots.",
+  "item.fire_track.fire_track_flame.clue": "Do something that makes others look up in amazement.",
+  "item.fire_track.smoke_track_flame": "Black Smoke Track Flame",
+  "item.fire_track.smoke_track_flame.tooltip": "It's as disorienting as darkness.\nThis looks like a great idea... Put it on your boots.",
+  "item.fire_track.smoke_track_flame.clue": "Do something that makes others blackout."
 }

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "fire_track:lava_track_flame",
+    "fire_track:smoke_track_flame",
+    "fire_track:fire_track_flame"
+  ]
+}

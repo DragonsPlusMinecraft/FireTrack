@@ -1,5 +1,17 @@
 {
   "tooltip.fire_track.fire.name": "烈焰轨迹",
   "tooltip.fire_track.smoke.name": "黑烟轨迹",
-  "tooltip.fire_track.lava.name": "熔岩轨迹"
+  "tooltip.fire_track.lava.name": "熔岩轨迹",
+  "tooltip.fire_track.modern.name": "太摩登啦！",
+  "tooltip.fire_track.good_news.name": "喜报！",
+  "tooltip.fire_track.waiting_for_server.name": "Waiting for server...",
+  "item.fire_track.lava_track_flame": "熔岩轨迹之火",
+  "item.fire_track.lava_track_flame.tooltip": "头脑也可以如熔岩般火热。\n看上去很适合在这个世界...把它涂抹到靴子上。",
+  "item.fire_track.lava_track_flame.clue": "做一些令别人头脑发烫的事情。",
+  "item.fire_track.fire_track_flame": "烈焰轨迹之火",
+  "item.fire_track.fire_track_flame.tooltip": "就像燃烧的夜幕一样迷人。\n看上去很适合在这个世界...把它涂抹到靴子上。",
+  "item.fire_track.fire_track_flame.clue": "做一些令别人仰头惊叹的事情。",
+  "item.fire_track.smoke_track_flame": "黑烟轨迹之火",
+  "item.fire_track.smoke_track_flame.tooltip": "就像黑暗一样让人迷失。\n看上去很适合在这个世界...把它涂抹到靴子上。",
+  "item.fire_track.smoke_track_flame.clue": "做一些令别人眼前一黑的事情。"
 }

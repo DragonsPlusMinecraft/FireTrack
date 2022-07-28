@@ -4,7 +4,10 @@ public enum TrackType {
     NONE("none"),
     FIRE("fire"),
     SMOKE("smoke"),
-    LAVA("lava");
+    LAVA("lava"),
+    MODERN("modern"),
+    GOOD_NEWS("good_news"),
+    WAITING_FOR_SERVER("waiting_for_server");
 
     public final String id;
 

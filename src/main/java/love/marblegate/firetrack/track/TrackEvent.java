@@ -2,6 +2,7 @@ package love.marblegate.firetrack.track;
 
 import love.marblegate.firetrack.FireTrack;
 import love.marblegate.firetrack.capability.TrackTypeData;
+import love.marblegate.firetrack.easteregg.ParticleTypeRegistry;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -33,6 +34,15 @@ public class TrackEvent {
                         }
                         case LAVA -> {
                             addParticle(player.level, ParticleTypes.FALLING_LAVA,player.getX(),player.getY(),player.getZ(), 0.2, 0.2,0.2,0.5,10);
+                        }
+                        case MODERN -> {
+                            addParticle(player.level, ParticleTypeRegistry.TEACON_MODERN.get(),player.getX(),player.getY(),player.getZ(), 0.1, 0.1,0.1,0.05,5);
+                        }
+                        case WAITING_FOR_SERVER -> {
+                            addParticle(player.level, ParticleTypeRegistry.TEACON_WAITING_FOR_SERVER.get(),player.getX(),player.getY(),player.getZ(), 0.1, 0.1,0.1,0.05,5);
+                        }
+                        case GOOD_NEWS -> {
+                            addParticle(player.level, ParticleTypeRegistry.TEACON_GOOD_NEWS.get(),player.getX(),player.getY(),player.getZ(), 0.1, 0.1,0.1,0.05,5);
                         }
                         default -> {}
                     }
