@@ -10,6 +10,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.CustomRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.Level;
+import org.lwjgl.system.CallbackI;
 
 import java.util.List;
 import java.util.Optional;
@@ -32,13 +33,14 @@ public class BootsTrackMaterialRecipe extends CustomRecipe {
                             return false;
                         }
                         itemstack = itemstack1;
+                    } else {
+                        return false;
                     }
                 } else {
                     var type = convertToTrackType(itemstack1);
                     if (type.isEmpty()) {
                         return false;
                     }
-
                     list.add(itemstack1);
                 }
             }
@@ -59,6 +61,8 @@ public class BootsTrackMaterialRecipe extends CustomRecipe {
                             return ItemStack.EMPTY;
                         }
                         itemstack = itemstack1.copy();
+                    } else {
+                        return ItemStack.EMPTY;
                     }
                 } else {
                     type = convertToTrackType(itemstack1);

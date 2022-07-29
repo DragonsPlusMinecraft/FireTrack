@@ -37,6 +37,8 @@ public class EastEggBootsTrackMaterialRecipe extends CustomRecipe {
                             return false;
                         }
                         itemstack = itemstack1;
+                    } else {
+                        return false;
                     }
                 } else {
                     var type = convertToTrackType(itemstack1);
@@ -64,6 +66,8 @@ public class EastEggBootsTrackMaterialRecipe extends CustomRecipe {
                             return ItemStack.EMPTY;
                         }
                         itemstack = itemstack1.copy();
+                    } else {
+                        return ItemStack.EMPTY;
                     }
                 } else {
                     type = convertToTrackType(itemstack1);
@@ -90,9 +94,7 @@ public class EastEggBootsTrackMaterialRecipe extends CustomRecipe {
             return Optional.of(TrackType.MODERN);
         } else if(itemStack.is(ItemRegistry.LAVA_TRACK_FLAME.get())){
             return Optional.of(TrackType.GOOD_NEWS);
-        } else if(itemStack.is(Items.SLIME_BALL)){
-            return Optional.of(TrackType.NONE);
-        } else return Optional.empty();
+        }  else return Optional.empty();
     }
 
     public boolean canCraftInDimensions(int i, int i1) {

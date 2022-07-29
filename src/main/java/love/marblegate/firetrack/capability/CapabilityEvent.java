@@ -38,7 +38,7 @@ public class CapabilityEvent {
                 data.ifPresent(cap -> {
                     var type = cap.get();
                     if(type!=TrackType.NONE){
-                        event.getTooltipElements().add(Either.left(new TranslatableComponent("tooltip.fire_track." + type.id +".name").setStyle(Style.EMPTY.withColor(TOOLTIP_COLOR).withBold(false))));
+                        event.getTooltipElements().add(Either.left(new TranslatableComponent("tooltip.fire_track." + type.id.toLowerCase() +".name").setStyle(Style.EMPTY.withColor(TOOLTIP_COLOR).withBold(false))));
                     }
                 });
             }

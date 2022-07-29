@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "love.marblegate.firetrack.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinArmorItem"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "mixins.fire_track.refmap.json"
+}

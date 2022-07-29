@@ -26,7 +26,7 @@ public class TrackTypeItemStackProvider implements ICapabilitySerializable<Compo
     public CompoundTag serializeNBT() {
         CompoundTag compoundNBT = new CompoundTag();
         if (TrackTypeData.CAPABILITY != null) {
-            compoundNBT.putString("type", imp.get().id);
+            compoundNBT.putString("track_type", imp.get().id);
         }
         return compoundNBT;
     }
@@ -34,7 +34,7 @@ public class TrackTypeItemStackProvider implements ICapabilitySerializable<Compo
     @Override
     public void deserializeNBT(CompoundTag compoundTag) {
         if (TrackTypeData.CAPABILITY != null) {
-            imp.set(TrackType.fromId(compoundTag.getString("type")));
+            imp.set(TrackType.fromId(compoundTag.getString("track_type")));
         }
     }
 }
