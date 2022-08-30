@@ -1,4 +1,4 @@
-package love.marblegate.firetrack.capability;
+package plus.dragons.firetrack.capability;
 
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

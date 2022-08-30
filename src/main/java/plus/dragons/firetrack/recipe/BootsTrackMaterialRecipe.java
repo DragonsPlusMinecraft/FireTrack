@@ -1,8 +1,9 @@
-package love.marblegate.firetrack.recipe;
+package plus.dragons.firetrack.recipe;
 
 import com.google.common.collect.Lists;
-import love.marblegate.firetrack.capability.TrackTypeData;
-import love.marblegate.firetrack.track.TrackType;
+import net.minecraft.world.item.crafting.Ingredient;
+import plus.dragons.firetrack.capability.TrackTypeData;
+import plus.dragons.firetrack.track.TrackType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.inventory.CraftingContainer;
@@ -19,6 +20,9 @@ public class BootsTrackMaterialRecipe extends CustomRecipe {
         super(resourceLocation);
     }
 
+    TrackType type;
+    Ingredient ingredient;
+
     public boolean matches(CraftingContainer container, Level level) {
         ItemStack itemstack = ItemStack.EMPTY;
         List<ItemStack> list = Lists.newArrayList();
@@ -32,13 +36,14 @@ public class BootsTrackMaterialRecipe extends CustomRecipe {
                             return false;
                         }
                         itemstack = itemstack1;
+                    } else {
+                        return false;
                     }
                 } else {
                     var type = convertToTrackType(itemstack1);
                     if (type.isEmpty()) {
                         return false;
                     }
-
                     list.add(itemstack1);
                 }
             }
@@ -48,7 +53,6 @@ public class BootsTrackMaterialRecipe extends CustomRecipe {
     }
 
     public ItemStack assemble(CraftingContainer craftingContainer) {
-        List<DyeItem> list = Lists.newArrayList();
         ItemStack itemstack = ItemStack.EMPTY;
         Optional<TrackType> type = Optional.empty();
         for(int i = 0; i < craftingContainer.getContainerSize(); ++i) {
@@ -60,6 +64,8 @@ public class BootsTrackMaterialRecipe extends CustomRecipe {
                             return ItemStack.EMPTY;
                         }
                         itemstack = itemstack1.copy();
+                    } else {
+                        return ItemStack.EMPTY;
                     }
                 } else {
                     type = convertToTrackType(itemstack1);

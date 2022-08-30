@@ -1,8 +1,8 @@
-package love.marblegate.firetrack.capability;
+package plus.dragons.firetrack.capability;
 
 import com.mojang.datafixers.util.Either;
-import love.marblegate.firetrack.FireTrack;
-import love.marblegate.firetrack.track.TrackType;
+import plus.dragons.firetrack.FireTrack;
+import plus.dragons.firetrack.track.TrackType;
 import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -14,8 +14,6 @@ import net.minecraftforge.client.event.RenderTooltipEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
-import javax.sound.midi.Track;
 
 @Mod.EventBusSubscriber()
 public class CapabilityEvent {
@@ -38,7 +36,7 @@ public class CapabilityEvent {
                 data.ifPresent(cap -> {
                     var type = cap.get();
                     if(type!=TrackType.NONE){
-                        event.getTooltipElements().add(Either.left(new TranslatableComponent("tooltip.fire_track." + type.id +".name").setStyle(Style.EMPTY.withColor(TOOLTIP_COLOR).withBold(false))));
+                        event.getTooltipElements().add(Either.left(new TranslatableComponent("tooltip.fire_track." + type.id.toLowerCase() +".name").setStyle(Style.EMPTY.withColor(TOOLTIP_COLOR).withBold(false))));
                     }
                 });
             }

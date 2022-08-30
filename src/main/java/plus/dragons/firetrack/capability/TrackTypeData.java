@@ -1,6 +1,6 @@
-package love.marblegate.firetrack.capability;
+package plus.dragons.firetrack.capability;
 
-import love.marblegate.firetrack.track.TrackType;
+import plus.dragons.firetrack.track.TrackType;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.CapabilityToken;
